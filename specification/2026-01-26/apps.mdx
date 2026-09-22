@@ -1152,7 +1152,7 @@ View behavior (optional):
 }
 ```
 
-Host MUST send this notification when tool execution completes (if the View is displayed during tool execution).
+Host MUST send this notification when tool execution returns a `CallToolResult`, provided the View is still displayed. If the View was closed before execution completes, the Host MAY skip this notification.
 
 ##### Tool error results
 
